@@ -1,0 +1,45 @@
+.widget {
+    h2.widget-title {
+        font-size: 16px;
+        font-weight: 800;
+        position: relative;
+        margin-bottom: 30px;
+        &::before {
+            content : "";
+            position: absolute;
+            left    : 0;
+            top  : 40px;
+            height  : 2px;
+            width   : 30px;
+            background: $color_green;
+            z-index: 1;
+        }
+        &::after {
+            content : "";
+            position: absolute;
+            left    : 0;
+            top  : 40px;
+            height  : 2px;
+            width   : 100%;
+            background: #eeeeee;
+            
+        }
+    }
+    ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        li {
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border-bottom: 1px solid #eeeeee;
+            overflow: hidden;
+            a {
+                color: #000;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@import "search";

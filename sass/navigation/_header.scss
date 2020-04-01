@@ -54,7 +54,27 @@
                 font-family: 'Roboto Slab', sans-serif;
                 font-weight: 700;
                 font-size: 18px;
+                text-decoration: none;
+                position: relative;
+                &:hover {
+                    color: #f2b91e;
+                    // &:after {
+                    //     position: absolute;
+                    //     content: '';
+                    //     width: 100%;
+                    //     margin-bottom: -9px;
+                    //     bottom: -14px;
+                    //     height: 3px;
+                    //     left: 0;
+                    //     background-color: #f2b91e;;
+                    //     z-index: 18;
+                    // }
+                }
+
+                
+  
             }
+            
             .sub-menu {
                 background: #fff;
                 border: 1px solid #ddd;
@@ -84,6 +104,23 @@
             }
             
         }
+        li.current-menu-item, li.current_page_item {
+           a {
+            color: #f2b91e;
+            // &:after {
+            //     position: absolute;
+            //     content: '';
+            //     width: 100%;
+            //     margin-bottom: -9px;
+            //     bottom: -14px;
+            //     height: 3px;
+            //     left: 0;
+            //     background-color: #f2b91e;;
+            //     z-index: 18;
+            // }
+           } 
+            
+        }
         li.menu-item-has-children > a::after {
             display: inline-block;
             font-family: 'FontAwesome' !important;
@@ -103,9 +140,7 @@
             font-size: 1em;
             letter-spacing: -0.2857em;
         }
-        .current-menu-item {
-            border-bottom: 1px solid #fff;
-        }
+        
         .ul.nav-menu > li.menu-item-has-children,
         .ul.nav-menu > li.page_item_has_children,{
             text-align: left;
